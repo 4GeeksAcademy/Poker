@@ -1,5 +1,52 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
+body {
+    background: rgb(17, 190, 34);
+}
+
+.card {
+    display: flex;
+    justify-self: center;
+    width: 180px;
+    height: 260px;
+    border-radius: 12px;
     background: white;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.corner {
+    position: absolute;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+
+.center-symbol {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+}
+
+.controls {
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+.controls input {
+    width: 80px;
+    padding: 5px;
+    margin-right: 10px;
 }
